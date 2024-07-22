@@ -12,6 +12,3 @@ function changeVideoSrc() {
     videoElement.src = getRandomVideoSrc();
     videoElement.load();
 }
-
-// Muda o vídeo a cada 60 segundos (60000 milissegundos)
-setInterval(changeVideoSrc, 60000);

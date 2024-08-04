@@ -8,9 +8,6 @@
     --grey: #4e4e4e;
     --greyIntellissis: #4D4D4D;
     --redIntellissis: #FF0000;
-    --redIntellissisLow: #ff0000ad;
-    --redIntellissisXLow: #ff000050;
-    --redIntellissisHigh: #ff0101;
     --darkGrey: #242424;
     --blackShadow: #00000040;
     --black: #000;
@@ -47,4 +44,21 @@
 }
 ::-moz-selection {
     background: #4d4d4d49; 
+}
+
+b{
+    color: var(--redIntellissis);
+}
+.flickity-prev-next-button{
+    background-color: var(--redIntellissis);
+    transition: var(--transition);
+}
+.flickity-prev-next-button:hover{
+    background-color: #a00d06;
+}
+.flickity-prev-next-button:focus:hover{
+    background-color: #a00d06;
+}
+.flickity-prev-next-button:focus{
+    background-color: var(--redIntellissis);
 }

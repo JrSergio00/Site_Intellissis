@@ -40,6 +40,41 @@ section#initialSection{
     margin-top: 7.5vh;
     border-radius: 30px;
     margin-left: 2vw;
+    z-index: 1; /* Define o z-index do vídeo */
+
+    /* border: 1px solid #b2b2b2; */
+    /* padding: 4px; */
+
+  }
+  & #shapeDivVideo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 20%;
+    z-index: 2;
+
+    & > div:nth-child(1) {
+      height: 30%;
+    }
+    & > div:nth-child(2){
+      height: 70%;
+      width: 100%;
+      background-color: var(--white);
+      border-radius: 200% 0 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding-right: 15%;
+
+      & a{
+        color: var(--greyIntellissis);
+        font-weight: 700;
+        font-size: 1.1em;
+        padding: 3% 5%;
+        transition: 300ms;
+      }
+    }
   }
   & div.container{
     position: absolute;
@@ -69,7 +104,7 @@ section#initialSection{
   & div.tools{
     position: absolute;
     bottom: 50px;
-    right: 50px;
+    left: 60px;
     width: 100px;
     height: 50px;
     z-index: 10;

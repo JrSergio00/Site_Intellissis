@@ -1,99 +1,71 @@
-header{
-  position: absolute;
+header {
   top: 0;
   width: 100%;
   z-index: 10;
+  height: 7.5vh;
+  display: flex;
+  justify-content: center;
 
-  & nav{
+  & nav {
     background: var(--white) !important;
-    padding: .5em !important;
+    padding: 0 !important;
+    width: 99%;
 
-    & .container{
+    & .container {
       margin: 0 1.5vw;
       padding: 0 !important;
       padding-left: 0 !important;
       padding-right: 0 !important;
       max-width: 100vw;
     }
-    & a{
+    & a {
       color: var(--lightBlack) !important;
       font-weight: 900 !important;
-
+      
       & img{
         margin-bottom: .4em;
       }
     }
-    & #navbarDocumentation, & #navbarAccount, & #navbarLandings{
+    & #navbarDocumentation, & #navbarAccount, & #navbarLandings {
       background-color: #efefef;
+      transition: var(--transition);
     }
-    & #navbarLandings{
+    & #navbarDocumentation:hover, & #navbarAccount:hover, & #navbarLandings:hover {
+      background-color: #dadada;
+    }
+    & #navbarLandings {
       border-radius: 25px 0 0 25px;
     }
-    & #navbarDocumentation{
+    & #navbarDocumentation {
       border-radius: 0 25px  25px 0;
     }
   }
 }
-section#initialSection{
+section#initialSection {
   background: var(--white) !important;
   padding: 0 !important;
   margin: 0 !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 92.5vh;
   width: 100vw;
+  padding-bottom: 2vh !important;
 
   & video{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 96vw;
-    height: 90vh;
+    height: 100%;
     object-fit: cover;
     transition: opacity 1s ease;
-    max-height: 100%;
-    margin-top: 7.5vh;
     border-radius: 30px;
-    margin-left: 2vw;
-    z-index: 1; /* Define o z-index do vídeo */
+    z-index: 1;
 
-    /* border: 1px solid #b2b2b2; */
-    /* padding: 4px; */
-
-  }
-  & #shapeDivVideo {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 20%;
-    height: 20%;
-    z-index: 2;
-
-    & > div:nth-child(1) {
-      height: 30%;
-    }
-    & > div:nth-child(2){
-      height: 70%;
-      width: 100%;
-      background-color: var(--white);
-      border-radius: 200% 0 0 0;
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      padding-right: 15%;
-
-      & a{
-        color: var(--greyIntellissis);
-        font-weight: 700;
-        font-size: 1.1em;
-        padding: 3% 5%;
-        transition: 300ms;
-      }
-    }
+    border: 1px solid #b2b2b2;
+    padding: 2px;
   }
   & div.container{
     position: absolute;
+    left: 5%;
 
     & h1{
       width: 200%;

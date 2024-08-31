@@ -50,7 +50,7 @@ section#initialSection {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 5vw !important;
@@ -132,6 +132,102 @@ section#initialSection {
     & figure:nth-child(4) img{
       width: 130%;
       transform: translateY(-140px);
+    }
+  }
+}
+
+section#SectionEmpresas{
+  background-color: #f1f4f8;
+
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+
+    position: absolute;
+    transform: translateY(-50%);
+    animation: slide 80s linear infinite;
+
+    & img{
+      width: 8em;
+    }
+    & img#me{
+      width: 5.5em;
+    }
+  }
+}
+
+section#about{
+  /* background-color: #3F3F3F;
+  background-image: linear-gradient(315deg, #bdcad9 0%, #e1dada 74%); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em 10em;
+
+  background-color: rgba(241, 244, 248, var(--bs-bg-opacity)) !important;
+
+  & div.cardAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    background-color: #525252;
+    padding: 20px;
+    border-radius: 50px;
+    height: auto;
+
+    & img{
+      border-radius: 30px;
+    }
+  }
+  & div.cardAbout:first-child{
+    position: relative;
+    & img{
+      height: 15em;
+    }
+    & img#shapeGrey{
+      position: absolute;
+      top: 70%;
+      left: 15%;
+    }
+    & img#shapeBorder{
+      position: absolute;
+      top: -8%;
+      left: -10%;
+      height: 5em;
+    }
+  }
+  & div.cardAbout:last-child{
+    width: 60%;
+    position: relative;
+
+    & img#fachada{
+      width: 100%;
+      border-radius: 35px;
+    }
+    & div{
+      color: #FFF;
+    }
+    & img#shapeRed{
+      position: absolute;
+      top: -8%;
+      right: -2%;
+      height: 10em;
+    }
+    & img#shapeWhite{
+      position: absolute;
+      top: 95%;
+      right: 10%;
+      height: 5em;
+    }
+    & img#shapeRedLite{
+      position: absolute;
+      top: 30%;
+      left: -5%;
+      height: 5em;
     }
   }
 }
